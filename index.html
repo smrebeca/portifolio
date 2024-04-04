@@ -13,19 +13,26 @@
     <div id="container">
         <div id="profile">
             <img src="./assets/profile.jpg" alt="foto de perfile Rebeca Miranda">
-            <p>Rebeca Miranda</p>
+            <p>Rebeca de Sousa Miranda</p>
         </div>
         <div id="switch" onclick="toggleMode()">
             <button>
             </button>
             <span></span>
         </div>
-        <ul>
+        <ul id="menu">
             <li>
-                <a href="#">Sobre Mim</a>
+                <a href="#" onclick="expandMenu(event)">Sobre Mim</a>
+                <p class="submenu">Sou formada em Direito, terminando uma Pós-graduação em Conciliação e Mediação de Conflitos.</p>
+                <p class="submenu">Iniciando uma jornada de aprendizado em Programação e Desenvolvimento de Sistemas.<strong> Vai ali embaixo e dá uma conferida no meu portifólio.</strong></p>
+                <p class="submenu">Caminhando para aprofundar o inglês e quem sabe iniciar os estudos em outros idiomas</p>
             </li>
             <li>
-                <a href="#">Curiosidades</a>
+                <a href="#" onclick="expandMenu(event)">Curiosidades</a>
+                <p class="submenu">Sou ariana, tenho 30 anos, tutora de um au au chamado Thor - e como o nome diz, ele deve ser o próprio deus do trovão. Sou a mais nova de dois irmãos, e somos completamente diferentes.</p>
+                <p class="submenu">Ouço músicas de todos os estilos - quando eu digo todos é ABSOLUTAMENTE todos mesmo. Amo livros, meus preferidos são suspense e thriller, estou tentando montar minha biblioteca da fera - aqui existe uma referência ao filme "bela e a fera". E sim, também amo filmes.</p>
+                <p class="submenu">Tenho algumas manias, como exemplo, sempre assisto os mesmos filmes até decorar as falas, são um conforto para momentos não tão bons.</p>
+                <p class="submenu">ps.: quem sabe um dia não faço uma página com indicações de filmes/livros, resumos.</p>
             </li>
             <li>
                 <a href="https://github.com/smrebeca" target="_blank">Veja meu Portifólio</a>
@@ -39,7 +46,9 @@
         </div>
         <div>
             <footer>
-                Feito por Rebeca Miranda
+                <div class="copyright">
+                    <p>© 2024 Site de Rebeca Miranda. Todos os direitos reservados.</p>
+                </div>
             </footer>
         </div>
     </div>
