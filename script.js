@@ -1,21 +1,16 @@
 function toggleMode() {
-    const html = document.documentElement
-    html.classList.toggle('light')
-    /* ou usar assim
-    if(html.classList.contains('light')) {
-        html.classList.remove('light')
-    } else {
-        html.classList.add('light')
-    } */
+    const html = document.documentElement;
+    const img = document.querySelector("#profile img");
 
-    const img = document.querySelector("#profile img")
+    html.classList.toggle('light');
 
-    if(html.classList.contains('light')) {
-        img.setAttribute("src", "./assets/profile.jpg")
+    if (html.classList.contains('light')) {
+        img.setAttribute("src", "./assets/profile.jpg"); // Define a imagem de perfil para o modo claro
+        html.style.background = "linear-gradient(to bottom, #ffffff, #f0f0f0)"; // Define o background para o modo claro
     } else {
-        img.setAttribute("src", "./assets/profile.jpg")
+        img.setAttribute("src", "./assets/profile.jpg"); // Define a imagem de perfil para o modo escuro
+        html.style.background = "linear-gradient(to bottom, #2c3e50, #1b2936)"; // Define o background para o modo escuro
     }
-
 }
 
 function expandMenu(event) {
