@@ -201,6 +201,18 @@ footer {
       --bg-url: url(./assets/bg_mobile-light.png);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    #menu.expanded {
+        /* Ajuste o estilo do footer quando o menu estiver expandido */
+        footer {
+            height: auto; /* Define a altura automática para o footer */
+        } 
+        .copyright {
+        display: block; /* Exibe todos os elementos do footer */
+    }
+}
+}
   
   /* animation */
   @keyframes slide-in {
