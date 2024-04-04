@@ -26,9 +26,6 @@
 
 body {
     height: 100vh;
-}
-
-body * {
     font-family: "Basley", san-serif;
     color: var(--text-color);
 }
@@ -191,17 +188,7 @@ footer {
 }
 
 /* media queries */
-/* @media (min-width: 700px) {
-    :root {
-      --bg-url: url(./assets/bg_mobile.png);
-    }
-  
-    .light {
-      --bg-url: url(./assets/bg_mobile-light.png);
-    }
-  } */
-
-  @media screen and (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
     /* Regras CSS para telas com largura máxima de 1250px */
 
     :root {
@@ -229,21 +216,21 @@ footer {
 }
 
   
-  /* animation */
-  @keyframes slide-in {
+/* animation */
+@keyframes slide-in {
     from {
-      left: 0;
+        left: 0;
     }
     to {
-      left: 50%;
+        left: 50%;
     }
-  }
+}
   
-  @keyframes slide-back {
+@keyframes slide-back {
     from {
-      left: 50%;
+        left: 50%;
     }
     to {
-      left: 0;
+        left: 0;
     }
-  }
+}
