@@ -202,18 +202,19 @@ footer {
   } */
 
   @media screen and (max-width: 1250px) {
+    /* Regras CSS para telas com largura máxima de 1250px */
 
     :root {
         --bg-url: url(./assets/bg_mobile.png);
-      }
-    
-      .light {
+    }
+  
+    .light {
         --bg-url: url(./assets/bg_mobile-light.png);
-      }
     }
 
     body {
         background: var(--bg-url) no-repeat center center/cover;
+        /* Definindo o background do corpo aqui */
     }
 
     #menu.expanded {
@@ -222,9 +223,11 @@ footer {
             height: auto; /* Define a altura automática para o footer */
         } 
         .copyright {
-        display: block; /* Exibe todos os elementos do footer */
+            display: block; /* Exibe todos os elementos do footer */
+        }
     }
 }
+
   
   /* animation */
   @keyframes slide-in {
